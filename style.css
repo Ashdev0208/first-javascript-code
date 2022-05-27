@@ -1,0 +1,106 @@
+h1 {
+  font-size: 5em;
+  background: linear-gradient(red, purple);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: American typewriter;
+  text-align: center;
+}
+
+.shapes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.shape {
+  margin-left: 30px;
+  border: 2px solid orange;
+  background: linear-gradient(red, purple);
+  transition: .6s ease all;
+  margin-top: 20px;
+}
+
+.choose {
+  width: 320px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  height: 70px;
+  background: linear-gradient(260deg, rgb(0, 253, 84), rgb(0, 123, 255));
+  position: relative;
+  z-index: 99;
+}
+
+.choose__openOrClose {
+  overflow: hidden;
+  width: 100%;
+  background: linear-gradient(260deg, rgb(0, 253, 84), rgb(0, 123, 255));
+  height: 100%;
+  transition: .6s ease all;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.choose__openOrClose.active{
+  height: 200px;
+}
+
+.title {
+  font-size: 1.5em;
+  font-family: American typewriter;
+  text-align: center;
+  position: absolute;
+  border-radius: 10px;
+  left: 50%;
+  top: 48%;
+  background: linear-gradient(260deg, rgb(0, 253, 84), rgb(0, 123, 255));
+  transition: .6s ease all;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  padding: 23px 123px;
+}
+
+.choose-item {
+  font-size: 1.5em;
+  font-family: American typewriter;
+  text-align: center;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+
+input {
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: 1px 1px 5px rgba(37, 37, 37, 0.356);
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+label {
+  font-family: american typewriter;
+  margin: 0 10px 0 30px;
+}
+
+input:last-child {
+  cursor: pointer;
+}
+
+.hiddenOrShow {
+  transition: 0.6s ease all;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hiddenOrShow.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.6s ease all;
+}
